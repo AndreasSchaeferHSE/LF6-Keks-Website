@@ -1,0 +1,19 @@
+Inhalt: 
+Kontaktformular implementieren
+ 
+Dauer: 
+15min + 30min
+ 
+Ziel/Ergebnis: 
+Man soll ein einfaches Kontaktformular, vermutlich nur mit den Feldern "name", "email" und "content". Oder weniger, wenn es ein Newsletter sein soll.
+ 
+Tätigkeiten:
+•	Nach Formular Beispielen googlen, vermutlich nach den 'form' und 'input' HTML tags.
+•	Korrekt plaziert in das Layout einfügen.
+•	Korrekte Verlinkung vom Submit in einer JS Funktion.
+•	Je nachdem wohin wir verlinken, muss man ggf. den Zielort anpassen.
+ 
+Voraussetzungen und Abhängigkeiten:
+•	Das Projekt sollte angefangen sein und man sollte sich den HTML tag 'form' anschauen, vorallem wie man eine JS Funktion dafür schreibt.
+•	Klären mit Frau Sommer, was genau mit den Kontakformular erreicht werden soll.
+
