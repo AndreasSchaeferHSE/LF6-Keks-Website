@@ -4,7 +4,27 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background: #e7e7e7;
+}
+
+.sectionPadding
+{
+    padding-top: calc(6rem + 72px);
+    padding-bottom: 6rem
+}
+
+.bg-primary{
+    background-color:#ffee00!important
+}
+a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:hover{
+    background-color:#ffee00!important
+}
+
+
+.bg-secondary{
+    background-color:#f81414!important
+}
+a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-secondary:hover{
+    background-color:#f81414!important
 }
 
 .timeline 
