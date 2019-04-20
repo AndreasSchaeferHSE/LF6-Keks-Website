@@ -1,12 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
-body
+
+:root
 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    --main-color: yellow;
+    --main-text-color-title: blue;
+    --main-text-color: red;
+    --secondary-color: red;
+    --secondary-text-color: white;
 }
 
-.sectionPadding
+.main-section
+{
+    color: var(--main-text-color);
+    background-color: var(--main-color)!important
+}
+
+.main-section h1
+{
+    color: var(--main-text-color-title)
+}
+
+
+.secondary-section
+{
+    color: var(--secondary-text-color);
+    background-color:var(--secondary-color)!important
+}
+
+.secondary-section h1
+{
+    color: var(--secondary-text-color)
+}
+
+section
 {
     padding-top: calc(6rem + 72px);
     padding-bottom: 6rem
@@ -25,6 +51,14 @@ a.bg-primary:focus,a.bg-primary:hover,button.bg-primary:focus,button.bg-primary:
 }
 a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-secondary:hover{
     background-color:#f81414!important
+}
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .timeline 
