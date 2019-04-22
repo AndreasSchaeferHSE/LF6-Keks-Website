@@ -19,237 +19,391 @@
 <body class="" data-spy="scroll" data-target="#mainNav" data-offset="50">
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand navbar-dark bg-secondary fixed-top text-uppercase border-bottom border-light" id="mainNav">
+  <nav class="navbar navbar-expand navbar-light navigation fixed-top text-uppercase border-bottom" id="mainNav">
+    <div class="navbar-brand">
+      <a class="nav-item nav-link active" href="#header">
+        Leibniz
+      </a>
+    </div>
     <div class="nav navbar-nav">
-      <a class="nav-item nav-link active" href="#header">Leibniz<span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#overview">Allgemein</a>
+      <div class="nav-item nav-link"></div>
       <a class="nav-item nav-link" href="#products">Kekssorten</a>
+      <a class="nav-item nav-link" href="#overview">About</a>
       <a class="nav-item nav-link" href="#history">Geschichte</a>
       <a class="nav-item nav-link" href="#contactForm">Contact Us</a>
       <a class="nav-item nav-link" href="#credits">Credits</a>
     </div>
   </nav>
 
-
+  <!-- Header Section-->
   <section class="main-section" id="header">
     <!-- Header TODO: image of cookies and stuff, some cool slogan/title or whatever under it -->
-    <header class="text-center sectionPadding">
+    <header class="text-center">
       <div class="container mb-0">
         <img class="d-block w-75 mx-auto" src="images/slider_arrangement (1).png" alt="First slide" style="object-fit: cover" >
-        <h1 class="text-uppaercase mb-5 d-block mx-auto">LEIBNIZ</h1>
-        BUTTERKEKS
+        <h1 class="text-uppercase mb-5 d-block mx-auto">LEIBNIZ</h1>
+        <p>Der Butterkeks</p>
       </div>
     </header>
   </section>
 
-
-  <!-- Overview Section-->
-  <section class="secondary-section sectionPadding" id='overview'>
-      <div class="container">
-          <h1 class="mb-0">Leinbniz-Keks?</h1>
-          <p>Der "Leinbniz-Keks" ist ein von Bahlsen seit 1889 produzierter Keks.</p>
-      </div>
-  
-      <div class="container">
-          <h1>Was ist Bahlsen?</h1>
-          <p>Bahlsen ist ein deutsches Familienunternehmen der Backwarenbranche mit Sitz in Hannover. Gegründet wurde die
-              heutige Bahlsen GmbH & Co. KG 1889 von Hermann Bahlsen (1859–1919).</p>
-      </div>
-  
-      <div class="container">
-          <h1>Ist Leibniz nicht irgendein Erfinder?</h1>
-          <p>Bahlsen nannte 1891 seine Kekse mit Buttergeschmack (Butter-Cakes) nach dem langjährigen hannoverschen
-              Hofbibliothekar und Philosophen Gottfried Wilhelm Leibniz, "Leibniz Cakes". Zu der Zeit war es üblich
-              Produkte
-              nach Historischen
-              Figuren zu benennen.</p>
-      </div>
-  
-      <div class="container">
-          <h1>Leibniz <i>Cakes</i>?</h1>
-          <p>Aufgrund fehlender Englischkenntnisse sprachen viele Kunden das Wort Cakes jedoch deutsch („Ka-kes“) aus,
-              sodass
-              Bahlsen die Schreibweise später in Keks änderte. Im Jahr 1911 wurde das von Bahlsen verwendete Wort Kekse
-              als
-              Übersetzung für das englische Cakes in den Duden aufgenommen.</p>
-      </div>
-    </div>
-  </section>
+  <hr class="separator">
 
 
   <!-- Products Section -->
-  <section class="bg-primary sectionPadding" id='products'>
+  <section class="main-section" id='products'>
     <div class="container">
-      <div class="container bg-warning">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
-        <img class="card-img-left" src="images/LEIBNIZBUTTERKEKS.jpg" alt="Card image cap">
-        <div class="card bg-success">
-          <img class="card-img-top" src="images/leibnizkakoakeks.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HALLO</p>
-          </div>
+
+    <h1 class="text-center mb-5">Kekssorten</h1>
+      
+    <div class="row">
+      <div class="col-lg-3">
+
+        <h2 class="my-4">Leibniz Produkte</h2>
+        <div class="list-group">
+          <a href="#KLASSISCHE" class="list-group-item">KLASSISCHE KEKSE</a>
+          <a href="#CHOCO" class="list-group-item">CHOCO KEKSE</a>
+          <a href="#FIGUREN" class="list-group-item">KEKS FIGUREN</a>
         </div>
-        <div class="card-deck">
-          <div class="card bg-primary">
-              <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-            <div class="card-body text-center">
-              <p class="card-text">HAahahaa</p>
+
+      </div>
+
+
+      <div class="col-lg-9">
+
+        <!-- TODO: Why placeholder?
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div> -->
+
+        <h2 id="KLASSISCHE">KLASSICHE KEKSE</h2>
+        <p>Die klassichen Kekse von Leibniz überzeugen mit </p>
+
+        <div class="row">
+        
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/BUTTERKEKS.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  BUTTERKEKS
+                </h4>
+
+                <p class="card-text">Der Originale Leibniz Keks. Über 100 Jahre Backtradition.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/VOLLKORN.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  VOLLKORN
+                </h4>
+   
+                <p class="card-text">Das Original mit Vollkornmehl für eine ausgewogene Ernährung.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/LANDKEKSLEIBNIZ.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  LANDKEKS
+                </h4>
+    
+                <p class="card-text">Der klassische Leibnizkeks mit Haferflocken für ein komplett neuen Geschmack.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+
+        <h2 id="CHOCO">CHOCO KEKSE</h2>
+        <p>Die Choco Kekse sind eine kombination aus den klassichen Leibnizkeksen und Schokolade.</p>
+        <p>Sie überzeugen mit </p>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/CHOCOVOLLMILCH.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  CHOCO VOLLMILCH
+                </h4>
         
-      <div class="card-deck">
-        <div class="card bg-primary">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HAahahaa</p>
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/BLACK'N WHITE.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  BLACK'N WHITE
+                </h4>
+            
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/LEMONCHEESECAKE.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  LEMON CHEESECAKE STYLE
+                </h4>
+       
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card bg-success">
-            <img class="card-img-top" src="images/leibnizkakoakeks.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HALLO</p>
+
+        <h2 id="FIGUREN">KEKS FIGUREN</h2>
+        <p>Die Keks </p>
+      <div class="row"> 
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/ZOOORIGINAL.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  ZOO ORIGINAL
+                </h4>
+          
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/ZOOBAUERHOF.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  ZOO BAUERNHOF
+                </h4>
+     
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <img class="card-img-top" src="images/ZOOWALDTIERE.png" alt="">
+              <div class="card-body">
+                <h4 class="card-title">
+                  ZOO WALDTIERE
+                </h4>
+          
+                <p class="card-text"></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card bg-danger">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">dddddd</p>
-          </div>
-        </div> 
+
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <hr class="separator">
+
+  <!-- Overview Section-->
+  <section class="main-section" id='overview'>
+    <h1 class="text-center mb-5">About</h1>
+    <div class="container">
+
+        <div class="block-of-text">
+          <h2>Leinbniz-Keks?</h2>
+          <p>
+            Der "Leinbniz-Keks" ist ein von Bahlsen seit 1889 produzierter Keks.
+          </p>
+        </div>
+
+        <div class="block-of-text text-right ml-auto">
+          <h2>Was ist Bahlsen?</h2>
+          <p>
+            Bahlsen ist ein deutsches Familienunternehmen der Backwarenbranche mit Sitz in Hannover. Gegründet wurde die
+            heutige Bahlsen GmbH & Co. KG 1889 von Hermann Bahlsen (1859–1919).
+          </p>
+        </div>
+
+      <div class="block-of-text">
+        <h2>Ist Leibniz nicht irgendein Erfinder?</h2>
+        <p>
+          Bahlsen nannte 1891 seine Kekse mit Buttergeschmack (Butter-Cakes) nach dem langjährigen hannoverschen
+          Hofbibliothekar und Philosophen Gottfried Wilhelm Leibniz, "Leibniz Cakes". Zu der Zeit war es üblich
+          Produkte
+          nach Historischen
+          Figuren zu benennen.
+        </p>
       </div>
 
-      <div class="card-deck">
-        <div class="card bg-primary">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HAahahaa</p>
-          </div>
-        </div>
-        <div class="card bg-success">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HALLO</p>
-          </div>
-        </div>
-        <div class="card bg-danger">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">dddddd</p>
-          </div>
-        </div> 
-      </div>
-
-      <div class="card-deck">
-        <div class="card bg-primary">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HAahahaa</p>
-          </div>
-        </div>
-        <div class="card bg-success">
-            <img class="card-img-top" src="images/leibnizkakoakeks.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">HALLO</p>
-          </div>
-        </div>
-        <div class="card bg-danger">
-            <img class="card-img-top" src="images/LEIBNIZBUTTERKEKS.jpg">
-          <div class="card-body text-center">
-            <p class="card-text">dddddd</p>
-          </div>
-        </div> 
+      <div class="block-of-text text-right ml-auto">
+        <h2>Leibniz <i>Cakes</i>?</h2>
+        <p>
+          Aufgrund fehlender Englischkenntnisse sprachen viele Kunden das Wort Cakes jedoch deutsch („Ka-kes“) aus,
+          sodass
+          Bahlsen die Schreibweise später in Keks änderte. Im Jahr 1911 wurde das von Bahlsen verwendete Wort Kekse
+          als
+          Übersetzung für das englische Cakes in den Duden aufgenommen.
+        </p>
       </div>
     </div>
   </section>
+
+  <hr class="separator">
 
 
   <!-- History Section -->
-  <section class="secondary-section sectionPadding" id='history'>
-    <div class="timeline">
-        <ul>
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                  <img src="images/LEIBNIZBUTTERKEKS.jpg" alt="Cinque Terre" width="50" height="40">
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                </div>
-            </li>              
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                </div>
-            </li>
-            <li>
-                <div class="content">
-                  <h3> Geschichte des Leipniz Kekses </h3>
-                  <p> Geschichte blablalballallblalg
-                    einofbgbbgibsgbrgbfoesnsnion</p>
-                </div>
-                <div class="time">
-                  <h4>Vorfall</h4>
-                </div>
-            </li>
-            <div style="clear: both;"></div>
-        </ul>
+  <section class="main-section" id='history'>
+    <div class="container">
+
+      <h1 class="text-center mb-5">Geschichte</h1>
+
+      <div class="timeline">
+          <ul>
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                    <img src="images/LEIBNIZBUTTERKEKS.jpg" alt="Cinque Terre" width="50" height="40">
+                  </div>
+              </li>
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                  </div>
+              </li>
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                  </div>
+              </li>
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                  </div>
+              </li>              
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                  </div>
+              </li>
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                  </div>
+              </li>
+              <li>
+                  <div class="content">
+                    <h3> Geschichte des Leipniz Kekses </h3>
+                    <p> Geschichte blablalballallblalg
+                      einofbgbbgibsgbrgbfoesnsnion</p>
+                  </div>
+                  <div class="time">
+                    <h4>Vorfall</h4>
+                  </div>
+              </li>
+              <div style="clear: both;"></div>
+          </ul>
+      </div>
     </div>
   </section>
 
+  <hr class="separator">
+
 
   <!-- Contact Form Section-->
-  <section class="main-section sectionPadding" id="contactForm">
+  <section class="main-section" id="contactForm">
     <div class="container">
+
       <h1>Contact Us:</h1>
       <form action="?" method="GET" class="needs-validation">
         <div class="form-group">
@@ -267,16 +421,20 @@
     </div>
   </section>
 
+  <hr class="separator">
+
 
   <!-- Credits Section -->
   <section id="credits">
-    <div class="container sectionPadding">
+    <div class="container">
         <h1>Quellen:</h1>
         <p>https://en.wikipedia.org/wiki/Leibniz-Keks</p>
         <p>https://de.wikipedia.org/wiki/Bahlsen</p>
         <p>https://www.w3schools.com/bootstrap4/</p>
         <p>https://cssgradient.io</p>
         <p>https://blackrockdigital.github.io/startbootstrap-freelancer/</p>
+        <p>https://www.leibniz.de/</p>
+        <p>https://getbootstrap.com/docs/4.0/examples/</p>
     </div>
   </section>
 
