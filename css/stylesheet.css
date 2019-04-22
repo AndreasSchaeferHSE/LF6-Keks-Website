@@ -46,7 +46,7 @@ body
     background: var(--main-color);
 }
 
-.main-section h1
+.main-section h1, h2, h3, h4
 {
     color: var(--main-text-color-title);
 }
@@ -72,10 +72,17 @@ section
 
 header h1
 {
+    padding-top: 5rem;
     font-size: 7rem;
     font-weight: 900;
+    line-height: 1rem;
 }
 
+header p
+{
+    font-size: 2rem;
+    font-weight: 500;
+}
 
 .timeline 
 {
