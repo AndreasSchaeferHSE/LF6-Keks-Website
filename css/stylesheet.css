@@ -33,6 +33,12 @@ body
     font-weight: bold;
 }
 
+h1
+{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
 .separator
 {
     margin-top: 0px;
@@ -70,7 +76,8 @@ body
 section
 {
     padding-top: calc(6rem + 72px);
-    padding-bottom: 6rem;}
+    padding-bottom: 6rem;
+}
 
 header h1
 {
