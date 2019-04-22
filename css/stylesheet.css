@@ -27,7 +27,6 @@ button.bg-secondary:hover {
     background-color: #e20a21 !important
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -59,7 +58,6 @@ h4 {
     color: var(--main-text-color-title);
     font-weight: bolder;
 }
-
 
 .navigation {
     font-size: 1.2rem;
@@ -134,6 +132,9 @@ header p {
     width: 50%;
 }
 
+/* < --  History.html Section* -- > */
+
+/* Div Box for complete Timeline */
 .timeline {
     position: relative;
     margin: 50px auto;
@@ -142,6 +143,8 @@ header p {
     box-sizing: border-box;
 }
 
+/* :before WAS used for differet circle colors */
+/* Time line */
 .timeline:before {
     content: '';
     position: absolute;
@@ -151,11 +154,14 @@ header p {
     background: var(--main-text-color-title);
 }
 
+/* ul = unordered list */
 .timeline ul {
     margin: 0;
     padding: 0;
 }
 
+/* li = list item */
+/* Div Box for Text Content */
 .timeline ul li {
     list-style: none;
     line-height: normal;
@@ -166,29 +172,21 @@ header p {
 
 }
 
+/* Text Content left*/
 .timeline ul li:nth-child(odd) {
     float: left;
     text-align: right;
-    clear: both; /* cleared Seite gegenüber */
+    clear: both; 
 }
 
-/* Rechte Seite Text 
-.timeline ul li:nth-child(even)
-{
-    float: right;
-    text-align: left;
-} */
-
+/* Text Content right*/
 .timeline ul li:nth-child(even) {
     float: right;
     text-align: left;
-    clear: both; /* cleared Seite gegenüber */
+    clear: both;
 }
 
-.content {
-    padding-bottom: 20px;
-}
-
+/* Circle in Timeline */
 .timeline ul li:nth-child(odd):before {
     content: '';
     position: absolute;
@@ -201,6 +199,7 @@ header p {
     box-shadow: 0 0 0 3px rgb(143, 143, 143);
 }
 
+/* Circle in Timeline */
 .timeline ul li:nth-child(even):before {
     content: '';
     position: absolute;
@@ -213,6 +212,12 @@ header p {
     box-shadow: 0 0 0 3px rgb(143, 143, 143);
 }
 
+/* Div Box Content :before element */
+.content {
+    padding-bottom: 20px;
+}
+
+/* Text Title */
 .timeline ul li h3 {
     margin: 0;
     padding: 0;
@@ -220,19 +225,24 @@ header p {
     color: var(--main-text-color-title);
 }
 
+/* Text Content */
 .timeline ul li p {
     margin: 10px 0 0;
     padding: 0;
     color: var(--main-text-color);
 }
 
-.timeline ul li .time h4 {
+/* Date Title */
+.timeline ul li .date h4 {
+    width: 110px;
+    text-align: center;
     margin: 0;
     padding: 0;
     font-size: 30px;
 }
 
-.timeline ul li:nth-child(odd) .time/* Bild für linke Seite rechts */
+/* Date Title position: right */
+.timeline ul li:nth-child(odd) .date
 {
     position: absolute;
     top: 12px;
@@ -245,11 +255,12 @@ header p {
     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
 }
 
-.timeline ul li:nth-child(even) .time/* Bild für rechte Seite links */
+/* Date Title position: left */
+.timeline ul li:nth-child(even) .date
 {
     position: absolute;
     top: 12px;
-    left: -165px; /* -165px standard */
+    left: -165px; 
     margin: 0;
     padding: 8px 16px;
     background: var(--secondary-color);
@@ -258,6 +269,7 @@ header p {
     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
 }
 
+/* Date Title */
 .timeline ul li h4 {
     margin: 0;
     padding: 0;
@@ -265,10 +277,20 @@ header p {
     color: var(--secondary-text-color);
 }
 
-.picture-right {
+/* Skalierung für die Bilder Div Box Rechts */
+.pictures-right {
     position: absolute;
     top: 12px;
     left: 670px; /* -165px standard */
     margin: 0;
-    padding: 8px 16px;
+    padding: 50px 16px 0px 50px;
+}
+
+/* Skalierung für die Bilder Div Box Links */
+.pictures-left {
+    position: absolute;
+    top: 12px;
+    right: 670px; /* -165px standard */
+    margin: 0;
+    padding: 50px 50px;
 }
