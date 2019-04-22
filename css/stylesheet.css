@@ -7,6 +7,7 @@
     --main-text-color: #e20a21;
     --secondary-color: linear-gradient(90deg, rgba(251,5,31,1) 0%, rgba(223,14,35,1) 50%, rgba(226,10,33,1) 100%);
     --secondary-text-color: white;
+    --card-bg-color: linear-gradient(135deg, rgba(255,215,39,1) 0%, rgba(252,222,86,1) 22%, rgba(255,211,20,1) 52%, rgba(254,218,64,1) 78%, rgba(255,212,20,1) 100%);
 }
 
 .bg-primary{
@@ -29,7 +30,7 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .separator
@@ -49,6 +50,7 @@ body
 .main-section h1, h2, h3, h4
 {
     color: var(--main-text-color-title);
+    font-weight: bolder;
 }
 
 
@@ -82,6 +84,28 @@ header p
 {
     font-size: 2rem;
     font-weight: 500;
+}
+
+.card-footer
+{
+    background: var(--secondary-color);
+}
+
+.card-footer small.text-muted
+{
+    color: var(--secondary-text-color)!important;
+}
+
+.card
+{
+    border-color: var(--secondary-color);
+    background: var(--card-bg-color);
+}
+
+.list-group-item
+{
+    color: var(--secondary-text-color);
+    background: var(--secondary-color);
 }
 
 .timeline 
