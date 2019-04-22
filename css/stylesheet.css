@@ -129,6 +129,11 @@ header p {
     background: var(--secondary-color);
 }
 
+.block-of-text {
+    padding: 1rem;
+    width: 50%;
+}
+
 .timeline {
     position: relative;
     margin: 50px auto;
