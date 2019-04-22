@@ -73,6 +73,8 @@ a.bg-secondary:focus,a.bg-secondary:hover,button.bg-secondary:focus,button.bg-se
 
 body
 {
+    background: rgb(251,160,0);
+    background: radial-gradient(circle, rgb(248, 241, 107) 0%, rgba(251,160,0,1) 100%);
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
