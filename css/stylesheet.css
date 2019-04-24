@@ -143,7 +143,7 @@ header p {
     box-sizing: border-box;
 }
 
-/* :before WAS used for differet circle colors */
+/* :before WAS used for different circle colors */
 /* Time line */
 .timeline:before {
     content: '';
@@ -186,7 +186,7 @@ header p {
     clear: both;
 }
 
-/* Circle in Timeline */
+/* Circles in Timeline */
 .timeline ul li:nth-child(odd):before {
     content: '';
     position: absolute;
@@ -199,7 +199,7 @@ header p {
     box-shadow: 0 0 0 3px rgb(143, 143, 143);
 }
 
-/* Circle in Timeline */
+/* Circles in Timeline */
 .timeline ul li:nth-child(even):before {
     content: '';
     position: absolute;
